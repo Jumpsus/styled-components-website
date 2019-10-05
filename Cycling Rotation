@@ -1,0 +1,12 @@
+  public static int[] solution(int B, int[] A) {
+    B= B%A.length;
+   int [] C= new int[A.length];
+   for(int i =0;i<=(A.length-1);i++){
+      if(i+B>A.length-1){
+        C[i+B-A.length]=A[i];
+     }else{
+       C[i+B]=A[i];
+     }
+    }
+    return C;
+   }
